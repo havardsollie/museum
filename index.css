@@ -1,0 +1,255 @@
+/* variables */
+
+/* reset */
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* base */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: rgb(138, 137, 223);
+}
+
+
+.button{
+    background: none;
+    border: 2px solid black;
+    color: yellow;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+    display: inline-block;
+}
+
+.button:hover{
+    color: cornflowerblue;
+}
+    
+input, textarea{
+    background: rgba (255, 255, 255, 0,05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: white;
+}
+
+/* fonts */
+h1{
+    font-weight: bolder;
+}
+
+h2,h3,h4{
+    font-weight:lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p, a,li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:paleturquoise;
+}
+
+/* mobile */
+.grid{
+   display: grid;
+   grid-template-columns: repeat(12, 1fr); 
+}
+
+.site-grid{
+    margin: 0 20px;
+}
+
+.site-grid ul{
+    display: none;
+}
+
+.site-grid h1{
+    grid-column: 2/6;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid yellow;
+}
+
+#welcome{
+    padding: 0 20px 20px 20px;
+}
+
+.welcome-text h2{
+    padding-bottom: 10px;
+    border-bottom: 1px solid yellow;
+}
+
+.welcome-text{
+    grid-column: 1/13;
+    line-height: 25px;
+}
+
+.welcome-img{
+    grid-column: 1/13;
+    grid-row: 3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid yellow;
+}
+
+.welcome-img img{
+    max-width: 100%;
+}
+
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 60px -20px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    gap: 20px;
+    background: rgb(52, 108, 212);
+}
+
+.portfolio-grid a:nth-child(1){
+    grid-column: 1/13;
+    grid-row: 1;
+}
+
+.portfolio-grid a:nth-child(2){
+    grid-column: 1/13;
+    grid-row: 2;
+}
+
+.portfolio-grid a:nth-child(3){
+    grid-column: 1/13;
+    grid-row: 3;
+}
+
+.portfolio-grid a:nth-child(4){
+    grid-column: 1/13;
+    grid-row: 4;
+}
+
+.portfolio-grid a:nth-child(5){
+    grid-column: 1/13;
+    grid-row: 5;
+}
+
+.portfolio-grid img{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 40px;
+}
+
+.portfolio-grid h4{
+    color: paleturquoise;
+}
+
+.portfolio-grid hr{
+    color: white;
+    margin: 20px -20px;
+}
+
+.info-text{
+    background:rgb(115, 98, 228);
+    text-decoration: white;
+    text-align: center;
+    line-height: 25px;
+    margin: 60px -20px;
+    padding: 30px;
+}
+
+.info-text p{
+    color: paleturquoise;
+}
+
+.info-text img{
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+#contact{
+    padding: 30px 20px;
+    background: teal;
+    margin: 0 -20px;
+}
+
+#contact h3, p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#contact form{
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contact input, textarea{
+    width: 100%;
+    margin: 10px 0;
+}
+
+footer{
+    padding: 30px 20px;
+    background: white;
+    margin: 0 -20px;
+}
+
+/* small pad */
+@media screen and (min-width: 620px){    
+
+    .site-grid h1{
+        grid-column: 1/8;
+        grid-row: 1;
+        font-size: 1.5em;
+        padding-bottom: 10px;
+        border-bottom: 4px solid yellow;
+    }
+
+    .welcome-img{
+        grid-column: 1/13;
+        grid-row: 5;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid yellow;
+    }
+
+    .portfolio-grid img{
+        max-width: 100%;
+        height: 200px;
+        border-radius: 40px;
+        margin: 20px 20px;
+    }
+
+    h4{
+        font-size: 1.3em;
+    }
+
+    #contact form{
+        width: 70%;
+        max-width: 350px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    #contact input, textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
+/* pad and laptop */
+@media screen and (min-width: 960px){
+
+}
+
+/* large screen */
+@media screen and (min-width: 1200px){
+
+}
