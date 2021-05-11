@@ -15,6 +15,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     background: rgb(255,255,255);
+    
+    
 }
 
 
@@ -58,13 +60,13 @@ p, a{
 
 strong{
     font-family: 'Trebuchet MS';
-    color:teal;
+    color: teal;
     text-decoration:underline;
     
 }
 
 li, ul a{
-  color:teal;  
+  color: teal;  
   font-family:sans-serif;
 }
 
@@ -113,95 +115,102 @@ i{
 }
 
 .page-title{
-        padding: 40px 0;
-        grid-column: 6/8;
-        font-size: 1em;
+    padding: 30px 0;
+    grid-column: 4/10;
 }
 
-#kids{
-    background: teal;
+#einstein{
+    background-image: url(images/balloon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.kids-text h2{
+.einstein-text h2{
+    grid-column: 8/13;
     text-align: left;
-    padding: 10px 0;
     border-bottom: 1px solid yellow;
+    padding-top: 60px;
+    color: white;
 }
 
-.kids-text{
-    grid-column: 2/10;
+.einstein-text p{
+    grid-column: 2/13;
     grid-row: 1;
     line-height: 20px;
-    padding: 20px 0;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    text-align: left;
 
 }
 
-.kids-img{
-    grid-column: 2/11;
-    grid-row: 2;
-
+.einstein-img, .night-img, .energetica-img{
+    display: none;
 }
 
-.kids-img img{
-    max-width: 100%;
+#air{
+    background: white;
+    padding:100px 20px 20px 20px;
+    margin: 0 -20px;
 }
 
-#teachers{
-    background: rgb(52, 108, 212);
+#night{
+    background-image: url(images/sculpture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.teachers-text h2{
+.night-text h2{
+    grid-column: 2/13;
     text-align: left;
-    padding: 10px 0;
     border-bottom: 1px solid yellow;
+    padding-top: 60px;
+    color: white;
 }
 
-.teachers-text{
-    grid-column: 2/10;
+.night-text p{
+    grid-column: 2/13;
     grid-row: 1;
     line-height: 20px;
-    padding: 20px 0;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    text-align: left;
+
 }
 
-.teachers-img{
-    grid-column: 2/11;
-    grid-row: 2;
+#air2{
+    background: white;
+    padding:100px 20px 20px 20px;
+    margin: 0 -20px;
 }
 
-.teachers-img img{
-    max-width: 100%;
-}
-
-#researchers{
-    background: rgb(115, 98, 228);
+#energetica{
+    background-image: url(images/lightning.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.researchers-text h2{
+.energetica-text h2{
+    grid-column: 8/13;
     text-align: left;
-    padding: 10px 0;
     border-bottom: 1px solid yellow;
+    padding-top: 60px;
+    color: white;
 }
 
-.researchers-text{
+.energetica-text p{
     grid-column: 2/10;
     grid-row: 1;
     line-height: 20px;
-    padding: 20px 0;
-}
+    padding-top: 20px;
+    padding-bottom: 200px;
+    text-align: left;
 
-.researchers-img{
-    grid-column: 2/11;
-    grid-row: 2;
-}
-
-.researchers-img img{
-    max-width: 100%;
 }
 
 #contact{
@@ -238,24 +247,22 @@ footer p{
 }
 
 /* small pad */
-@media screen and (min-width: 620px){
-    
+@media screen and (min-width: 655px){
     i{
         font-size: 1.3em;
     }
 
-    .kids-text, .teachers-text, .researchers-text{
-        grid-column: 2/12;
-    }
-
-    .kids-img, .teachers-img, .researchers-img{
-        grid-column: 3/11;
-        grid-row: 2;
+    .page-title{
+        grid-column: 6/9;
     }
 }
 
 /* pad and laptop */
 @media screen and (min-width: 960px){
+    .body{
+        background: teal;
+    }
+    
     .site-nav ul{
         display: flex;
         gap: 40px;
@@ -273,7 +280,7 @@ footer p{
 
     .page-title{
         padding: 40px 0;
-        grid-column: 7/8;
+        grid-column: 5/10;
         font-size: 1.5em;
     }
    
@@ -295,19 +302,22 @@ footer p{
     border-bottom: 4px solid yellow;
     }
 
-    #teachers{
-        padding-bottom: 60px;
+    #air, #air2{
+        background: white;
+        padding:60px 20px 20px 20px;
+        margin: 0 -20px;
     }
 
-    #researchers{
-        padding-bottom: 80px;
+    #einstein, #night, #energetica{
+        padding-bottom: 200px;
     }
 
-    .kids-text, .teachers-text, .researchers-text{
-        line-height: 30px;
+    .einstein-text p, .night-text p, .energetica-text p{
+        text-align: start;
+        line-height: 35px;
     }
+
 }
-
 /* large screen */
 @media screen and (min-width: 1200px){
     .site-nav h1{
@@ -321,27 +331,5 @@ footer p{
         margin-right: 400px;
         margin-left: 90px;
         padding-bottom: 30px;
-    }
-    
-    .kids-text h2, .teachers-text h2, .researchers-text h2{
-        text-align: center;
-        padding: 15px 0;
-        border-bottom: 2px solid yellow;
-    }
-    
-    .kids-text, .teachers-text, .researchers-text{
-        grid-column: 2/5;
-        grid-row: 1;
-        line-height: 20px;
-        padding: 20px 0;
-    
-    }
-    
-    .kids-img, .teachers-img, .researchers-img{
-        grid-column: 7/13;
-        grid-row: 1;
-        max-width: 70%;
-        padding: 75px 0;
-    
     }
 }

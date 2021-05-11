@@ -58,13 +58,13 @@ p, a{
 
 strong{
     font-family: 'Trebuchet MS';
-    color:teal;
+    color: teal;
     text-decoration:underline;
     
 }
 
 li, ul a{
-  color:teal;  
+  color: teal;  
   font-family:sans-serif;
 }
 
@@ -113,95 +113,159 @@ i{
 }
 
 .page-title{
-        padding: 40px 0;
-        grid-column: 6/8;
-        font-size: 1em;
+    padding: 30px 0;
+    grid-column: 6/8;
 }
 
-#kids{
-    background: teal;
+#cosmology{
+    background: rgb(84, 141, 173);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.kids-text h2{
+.cosmology-text h2{
     text-align: left;
     padding: 10px 0;
     border-bottom: 1px solid yellow;
 }
 
-.kids-text{
-    grid-column: 2/10;
-    grid-row: 1;
+.cosmology-text{
+    grid-column: 2/11;
+    grid-row: 2;
     line-height: 20px;
     padding: 20px 0;
 
 }
 
-.kids-img{
-    grid-column: 2/11;
-    grid-row: 2;
-
-}
-
-.kids-img img{
+.cosmology-img img{
     max-width: 100%;
 }
 
-#teachers{
-    background: rgb(52, 108, 212);
+.cosmology-img{
+    grid-column: 1/13;
+    grid-row: 1;
+    margin: 0px -20px;
+}
+
+#evolution{
+    background: rgb(179, 129, 104);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.teachers-text h2{
+.evolution-text h2{
     text-align: left;
     padding: 10px 0;
     border-bottom: 1px solid yellow;
 }
 
-.teachers-text{
-    grid-column: 2/10;
-    grid-row: 1;
-    line-height: 20px;
-    padding: 20px 0;
-}
-
-.teachers-img{
+.evolution-text{
     grid-column: 2/11;
     grid-row: 2;
+    line-height: 20px;
+    padding: 20px 0;
+
 }
 
-.teachers-img img{
+.evolution-img img{
     max-width: 100%;
 }
 
-#researchers{
-    background: rgb(115, 98, 228);
+.evolution-img{
+    grid-column: 1/13;
+    grid-row: 1;
+    margin: 0px -20px;
+}
+
+
+#bio{
+    background: rgb(91, 173, 206);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.researchers-text h2{
+.bio-text h2{
     text-align: left;
     padding: 10px 0;
     border-bottom: 1px solid yellow;
 }
 
-.researchers-text{
-    grid-column: 2/10;
-    grid-row: 1;
-    line-height: 20px;
-    padding: 20px 0;
-}
-
-.researchers-img{
+.bio-text{
     grid-column: 2/11;
     grid-row: 2;
+    line-height: 20px;
+    padding: 20px 0;
+
 }
 
-.researchers-img img{
+.bio-img img{
     max-width: 100%;
+}
+
+.bio-img{
+    grid-column: 1/13;
+    grid-row: 1;
+    margin: 0px -20px;
+}
+
+#robotics{
+    background: rgb(155, 158, 159);
+    padding: 0 20px 20px 20px;
+    margin: 0 -20px;
+}
+
+.robotics-text h2{
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid yellow;
+}
+
+.robotics-text{
+    grid-column: 2/11;
+    grid-row: 2;
+    line-height: 20px;
+    padding: 20px 0;
+
+}
+
+.robotics-img img{
+    max-width: 100%;
+}
+
+.robotics-img{
+    grid-column: 1/13;
+    grid-row: 1;
+    margin: 0px -20px;
+}
+
+#ecology{
+    background: rgb(85, 160, 101);
+    padding: 0 20px 20px 20px;
+    margin: 0 -20px;
+}
+
+.ecology-text h2{
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid yellow;
+}
+
+.ecology-text{
+    grid-column: 2/11;
+    grid-row: 2;
+    line-height: 20px;
+    padding: 20px 0;
+
+}
+
+.ecology-img img{
+    max-width: 100%;
+}
+
+.ecology-img{
+    grid-column: 1/13;
+    grid-row: 1;
+    margin: 0px -20px;
 }
 
 #contact{
@@ -237,19 +301,20 @@ footer p{
     color: black;
 }
 
+
 /* small pad */
-@media screen and (min-width: 620px){
-    
+@media screen and (min-width: 655px){
     i{
         font-size: 1.3em;
     }
 
-    .kids-text, .teachers-text, .researchers-text{
-        grid-column: 2/12;
+    .cosmology-img, .evolution-img, .bio-img, .robotics-img, .ecology-img{
+        grid-column: 4/10;
+        grid-row: 1;
     }
 
-    .kids-img, .teachers-img, .researchers-img{
-        grid-column: 3/11;
+    .cosmology-text, .evolution-text, .bio-text, .robotics-text, .ecology-text{
+        grid-column: 4/10;
         grid-row: 2;
     }
 }
@@ -295,16 +360,17 @@ footer p{
     border-bottom: 4px solid yellow;
     }
 
-    #teachers{
-        padding-bottom: 60px;
+    .cosmology-img, .evolution-img, .bio-img, .robotics-img, .ecology-img{
+        grid-column: 1/6;
+        grid-row: 1;
+        margin: 20px 0;
+        padding-top: 30px;
     }
 
-    #researchers{
-        padding-bottom: 80px;
-    }
-
-    .kids-text, .teachers-text, .researchers-text{
-        line-height: 30px;
+    .cosmology-text, .evolution-text, .bio-text, .robotics-text, .ecology-text{
+        grid-column: 7/13;
+        grid-row: 1;
+        line-height: 25px;
     }
 }
 
@@ -322,26 +388,21 @@ footer p{
         margin-left: 90px;
         padding-bottom: 30px;
     }
-    
-    .kids-text h2, .teachers-text h2, .researchers-text h2{
-        text-align: center;
-        padding: 15px 0;
-        border-bottom: 2px solid yellow;
-    }
-    
-    .kids-text, .teachers-text, .researchers-text{
-        grid-column: 2/5;
+
+    .cosmology-img, .evolution-img, .bio-img, .robotics-img, .ecology-img{
+        grid-column: 2/7;
         grid-row: 1;
-        line-height: 20px;
-        padding: 20px 0;
-    
+        margin: 20px 0;
+        padding-top: 30px;
     }
-    
-    .kids-img, .teachers-img, .researchers-img{
-        grid-column: 7/13;
+
+    .cosmology-text, .evolution-text, .bio-text, .robotics-text, .ecology-text{
+        grid-column: 8/12;
         grid-row: 1;
-        max-width: 70%;
-        padding: 75px 0;
-    
+        line-height: 25px;
     }
 }
+
+
+
+

@@ -56,15 +56,23 @@ p, a{
     color:paleturquoise;
 }
 
+b{
+    color: yellow;
+}
+
+td{
+    color: white;
+}
+
 strong{
     font-family: 'Trebuchet MS';
-    color:teal;
+    color: teal;
     text-decoration:underline;
     
 }
 
 li, ul a{
-  color:teal;  
+  color: teal;  
   font-family:sans-serif;
 }
 
@@ -113,95 +121,42 @@ i{
 }
 
 .page-title{
-        padding: 40px 0;
-        grid-column: 6/8;
-        font-size: 1em;
+    padding: 30px 0;
+    grid-column: 6/8;
 }
 
-#kids{
-    background: teal;
+#location, #admission, #hours, #acc, #food, #shop{
+    background: rgb(84, 141, 173);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.kids-text h2{
+.location-text h2, .admission-text h2, .hours-text h2, .acc-text h2, .food-text h2, .shop-text h2{
     text-align: left;
     padding: 10px 0;
     border-bottom: 1px solid yellow;
 }
 
-.kids-text{
-    grid-column: 2/10;
-    grid-row: 1;
-    line-height: 20px;
-    padding: 20px 0;
-
-}
-
-.kids-img{
+.location-text, .admission-text, .acc-text, .food-text, .shop-text{
     grid-column: 2/11;
-    grid-row: 2;
-
-}
-
-.kids-img img{
-    max-width: 100%;
-}
-
-#teachers{
-    background: rgb(52, 108, 212);
-    padding: 0 20px 20px 20px;
-    margin: 0 -20px;
-}
-
-.teachers-text h2{
-    text-align: left;
-    padding: 10px 0;
-    border-bottom: 1px solid yellow;
-}
-
-.teachers-text{
-    grid-column: 2/10;
     grid-row: 1;
     line-height: 20px;
     padding: 20px 0;
 }
 
-.teachers-img{
-    grid-column: 2/11;
-    grid-row: 2;
-}
-
-.teachers-img img{
-    max-width: 100%;
-}
-
-#researchers{
-    background: rgb(115, 98, 228);
-    padding: 0 20px 20px 20px;
-    margin: 0 -20px;
-}
-
-.researchers-text h2{
-    text-align: left;
-    padding: 10px 0;
-    border-bottom: 1px solid yellow;
-}
-
-.researchers-text{
-    grid-column: 2/10;
+.location-i, .admission-i, .acc-i, .food-i, .shop-i{
+    grid-column: 12/13;
     grid-row: 1;
-    line-height: 20px;
-    padding: 20px 0;
+    font-size: 1.2em;
+    margin: 30px 0;
 }
 
-.researchers-img{
+.hours-text{
     grid-column: 2/11;
-    grid-row: 2;
-}
-
-.researchers-img img{
-    max-width: 100%;
+    grid-row: 1;
+    line-height: 30px;
+    padding: 20px 0;
+    text-align: right;
 }
 
 #contact{
@@ -243,19 +198,14 @@ footer p{
     i{
         font-size: 1.3em;
     }
-
-    .kids-text, .teachers-text, .researchers-text{
-        grid-column: 2/12;
-    }
-
-    .kids-img, .teachers-img, .researchers-img{
-        grid-column: 3/11;
-        grid-row: 2;
-    }
 }
 
 /* pad and laptop */
 @media screen and (min-width: 960px){
+    .body{
+        background: teal;
+    }
+    
     .site-nav ul{
         display: flex;
         gap: 40px;
@@ -295,17 +245,15 @@ footer p{
     border-bottom: 4px solid yellow;
     }
 
-    #teachers{
-        padding-bottom: 60px;
-    }
-
-    #researchers{
-        padding-bottom: 80px;
-    }
-
-    .kids-text, .teachers-text, .researchers-text{
-        line-height: 30px;
-    }
+   .location-text, .admission-text, .acc-text, .food-text, .shop-text{
+       grid-column: 2/8;
+       line-height: 30px;
+       font-size: 1.1em;
+   }
+   
+   .location-i, .admission-i, .acc-i, .food-i, .food-i, .shop-i{
+       grid-column: 9/10;
+   }
 }
 
 /* large screen */
@@ -322,26 +270,15 @@ footer p{
         margin-left: 90px;
         padding-bottom: 30px;
     }
-    
-    .kids-text h2, .teachers-text h2, .researchers-text h2{
-        text-align: center;
-        padding: 15px 0;
-        border-bottom: 2px solid yellow;
+
+    .location-text, .admission-text, .acc-text, .food-text, .shop-text{
+        grid-column: 2/7;
+        line-height: 35px;
+        font-size: 1.2em;
     }
     
-    .kids-text, .teachers-text, .researchers-text{
-        grid-column: 2/5;
-        grid-row: 1;
-        line-height: 20px;
-        padding: 20px 0;
-    
-    }
-    
-    .kids-img, .teachers-img, .researchers-img{
-        grid-column: 7/13;
-        grid-row: 1;
-        max-width: 70%;
-        padding: 75px 0;
-    
+    .location-i, .admission-i, .acc-i, .food-i, .food-i, .shop-i{
+        grid-column: 9/10;
+        margin: 40px 0;
     }
 }
