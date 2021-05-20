@@ -81,10 +81,6 @@ li, ul a:hover{
     color: black;
 }
 
-b{
-    color: yellow;
-}
-
 /* mobile */
 .grid{
     display: grid;
@@ -127,89 +123,89 @@ i{
         font-size: 1em;
 }
 
-#kids{
-    background: teal;
-    padding: 0 20px 20px 20px;
-    margin: 0 -20px;
-}
-
-.kids-text h2{
-    text-align: left;
-    padding: 10px 0;
-    border-bottom: 1px solid yellow;
-}
-
-.kids-text{
-    grid-column: 2/10;
-    grid-row: 1;
-    line-height: 20px;
-    padding: 20px 0;
-
-}
-
-.kids-img{
-    grid-column: 2/11;
-    grid-row: 2;
-
-}
-
-.kids-img img{
-    max-width: 100%;
-}
-
-#teachers{
+#support{
     background: rgb(52, 108, 212);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.teachers-text h2{
+.support-text h2{
     text-align: left;
     padding: 10px 0;
     border-bottom: 1px solid yellow;
 }
 
-.teachers-text{
+.support-text{
+    grid-column: 2/10;
+    grid-row: 1;
+    line-height: 20px;
+    padding: 20px 0;
+
+}
+
+.support-img{
+    grid-column: 2/11;
+    grid-row: 2;
+
+}
+
+.support-img img{
+    max-width: 100%;
+}
+
+#volunteer{
+    background: teal;
+    padding: 0 20px 20px 20px;
+    margin: 0 -20px;
+}
+
+.volunteer-text h2{
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid yellow;
+}
+
+.volunteer-text{
     grid-column: 2/10;
     grid-row: 1;
     line-height: 20px;
     padding: 20px 0;
 }
 
-.teachers-img{
+.volunteer-img{
     grid-column: 2/11;
     grid-row: 2;
 }
 
-.teachers-img img{
+.volunteer-img img{
     max-width: 100%;
 }
 
-#researchers{
+#intern{
     background: rgb(115, 98, 228);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
 
-.researchers-text h2{
+.intern-text h2{
     text-align: left;
     padding: 10px 0;
     border-bottom: 1px solid yellow;
 }
 
-.researchers-text{
+.intern-text{
     grid-column: 2/10;
     grid-row: 1;
     line-height: 20px;
     padding: 20px 0;
 }
 
-.researchers-img{
+.intern-img{
     grid-column: 2/11;
     grid-row: 2;
 }
 
-.researchers-img img{
+.intern-img img{
     max-width: 100%;
 }
 
@@ -253,11 +249,11 @@ footer p{
         font-size: 1.3em;
     }
 
-    .kids-text, .teachers-text, .researchers-text{
+    .support-text, .volunteer-text, .intern-text{
         grid-column: 2/12;
     }
 
-    .kids-img, .teachers-img, .researchers-img{
+    .support-img, .volunteer-img, .intern-img{
         grid-column: 3/11;
         grid-row: 2;
     }
@@ -304,15 +300,15 @@ footer p{
     border-bottom: 4px solid yellow;
     }
 
-    #teachers{
+    #volunteer{
         padding-bottom: 60px;
     }
 
-    #researchers{
+    #intern{
         padding-bottom: 80px;
     }
 
-    .kids-text, .teachers-text, .researchers-text{
+    .support-text, .volunteer-text, .intern-text{
         line-height: 30px;
     }
 }
@@ -332,13 +328,13 @@ footer p{
         padding-bottom: 30px;
     }
     
-    .kids-text h2, .teachers-text h2, .researchers-text h2{
+    .support-text h2, .volunteer-text h2, .intern-text h2{
         text-align: center;
         padding: 15px 0;
         border-bottom: 2px solid yellow;
     }
     
-    .kids-text, .teachers-text, .researchers-text{
+    .support-text, .volunteer-text, .intern-text{
         grid-column: 2/5;
         grid-row: 1;
         line-height: 35px;
@@ -346,7 +342,7 @@ footer p{
     
     }
     
-    .kids-img, .teachers-img, .researchers-img{
+    .support-img, .volunteer-img, .intern-img{
         grid-column: 7/13;
         grid-row: 1;
         max-width: 70%;

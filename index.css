@@ -45,6 +45,11 @@ input, textarea{
 /* fonts */
 h1{
     font-weight: bolder;
+    background: linear-gradient(to left, rgb(52, 108, 212), teal);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 h2,h3,h4{
@@ -64,6 +69,10 @@ li, ul a{
 
 li, ul a:active,a:hover{
     color: black;
+}
+
+b{
+    color: yellow;
 }
 
 /* mobile */
