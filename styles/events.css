@@ -129,7 +129,7 @@ i{
 }
 
 #einstein{
-    background-image: url(images/balloon.jpg);
+    background-image: url(/images/balloon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 20px 20px 20px;
@@ -155,7 +155,7 @@ i{
 }
 
 .einstein-img, .night-img, .energetica-img{
-    max-width: 100%;
+    display: none;
 }
 
 #air{
@@ -165,7 +165,7 @@ i{
 }
 
 #night{
-    background-image: url(images/sculpture.jpg);
+    background-image: url(/images/sculpture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 20px 20px 20px;
@@ -197,7 +197,7 @@ i{
 }
 
 #energetica{
-    background-image: url(images/lightning.jpg);
+    background-image: url(/images/lightning.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 20px 20px 20px;
