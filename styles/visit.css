@@ -134,10 +134,10 @@ i{
     grid-column: 6/8;
 }
 
-#location, #admission, #hours, #acc, #food, #shop{
-    background: rgb(84, 141, 173);
-    padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+.visit-container {
+    background: linear-gradient(to bottom, rgb(52, 108, 212), teal);
+    margin: -20px;
+    margin-top: 10px;
 }
 
 .location-text h2, .admission-text h2, .hours-text h2, .acc-text h2, .food-text h2, .shop-text h2{
@@ -211,18 +211,22 @@ footer p{
 
 /* pad and laptop */
 @media screen and (min-width: 960px){
-    .body{
-        background: teal;
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
     }
     
     .site-nav ul{
         display: flex;
-        gap: 40px;
-        padding: 10px 0;
-        margin-right: 400px;
-        margin-left: 80px;
-        padding-bottom: 30px;
+        margin: 0 auto;
+        justify-content: space-evenly;
    }
+
+   nav label {
+       display: none;
+   }
+
 
    .site-nav h1{
         margin-left: 60px;
@@ -235,18 +239,6 @@ footer p{
         grid-column: 7/8;
         font-size: 1.5em;
     }
-   
-   #hamburger-menu{
-       display: none;
-   }
-    
-   #hamburger-menu:checked ~ ul{
-       display: none;
-   }
-   
-   i{
-       display: none;
-   }
 
    .site-nav h1{
     font-size: 2em;
@@ -271,13 +263,6 @@ footer p{
         margin-left: 60px;
         font-size: 2.5em;
         border-bottom: 4px solid yellow;
-    }
-
-    .site-nav ul{
-        gap: 80px;
-        margin-right: 400px;
-        margin-left: 90px;
-        padding-bottom: 30px;
     }
 
     .location-text, .admission-text, .acc-text, .food-text, .shop-text{

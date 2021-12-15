@@ -132,7 +132,7 @@ i{
 }
 
 #kids{
-    background: teal;
+    background: linear-gradient(to top, rgb(52, 108, 212), teal);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -162,7 +162,7 @@ i{
 }
 
 #teachers{
-    background: rgb(52, 108, 212);
+    background: linear-gradient(to bottom, rgb(52, 108, 212), teal);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -190,7 +190,7 @@ i{
 }
 
 #researchers{
-    background: rgb(115, 98, 228);
+    background: linear-gradient(to top, rgb(52, 108, 212), teal);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -269,13 +269,19 @@ footer p{
 
 /* pad and laptop */
 @media screen and (min-width: 960px){
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
     .site-nav ul{
         display: flex;
-        gap: 40px;
-        padding: 10px 0;
-        margin-right: 400px;
-        margin-left: 80px;
-        padding-bottom: 30px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+   }
+
+   nav label {
+       display: none;
    }
 
    .site-nav h1{
@@ -327,13 +333,6 @@ footer p{
         margin-left: 60px;
         font-size: 2.5em;
         border-bottom: 4px solid yellow;
-    }
-
-    .site-nav ul{
-        gap: 80px;
-        margin-right: 400px;
-        margin-left: 90px;
-        padding-bottom: 30px;
     }
     
     .kids-text h2, .teachers-text h2, .researchers-text h2{

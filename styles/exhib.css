@@ -131,7 +131,7 @@ i{
 }
 
 #cosmology{
-    background: rgb(84, 141, 173);
+    background: linear-gradient(to bottom, rgb(52, 108, 212), rgb(179, 129, 104));
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -161,7 +161,7 @@ i{
 }
 
 #evolution{
-    background: rgb(179, 129, 104);
+    background: linear-gradient(to bottom, rgb(179, 129, 104), rgb(91, 173, 206));
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -192,7 +192,7 @@ i{
 
 
 #bio{
-    background: rgb(91, 173, 206);
+    background: linear-gradient(to bottom, rgb(91, 173, 206), rgb(155, 158, 159));
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -222,7 +222,7 @@ i{
 }
 
 #robotics{
-    background: rgb(155, 158, 159);
+    background: linear-gradient(to bottom, rgb(155, 158, 159), rgb(85, 160, 101));
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -252,7 +252,7 @@ i{
 }
 
 #ecology{
-    background: rgb(85, 160, 101);
+    background: linear-gradient(to bottom, rgb(85, 160, 101), teal);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -334,13 +334,19 @@ footer p{
 
 /* pad and laptop */
 @media screen and (min-width: 960px){
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
     .site-nav ul{
         display: flex;
-        gap: 40px;
-        padding: 10px 0;
-        margin-right: 400px;
-        margin-left: 80px;
-        padding-bottom: 30px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+   }
+
+   nav label {
+       display: none;
    }
 
    .site-nav h1{
@@ -368,9 +374,9 @@ footer p{
    }
 
    .site-nav h1{
-    font-size: 2em;
-    padding-bottom: 10px;
-    border-bottom: 4px solid yellow;
+        font-size: 2em;
+        padding-bottom: 10px;
+        border-bottom: 4px solid yellow;
     }
 
     .cosmology-img, .evolution-img, .bio-img, .robotics-img, .ecology-img{
@@ -393,13 +399,6 @@ footer p{
         margin-left: 60px;
         font-size: 2.5em;
         border-bottom: 4px solid yellow;
-    }
-
-    .site-nav ul{
-        gap: 80px;
-        margin-right: 400px;
-        margin-left: 90px;
-        padding-bottom: 30px;
     }
 
     .cosmology-img, .evolution-img, .bio-img, .robotics-img, .ecology-img{

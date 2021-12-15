@@ -186,7 +186,7 @@ i{
 }
 
 #intern{
-    background: rgb(115, 98, 228);
+    background: rgb(52, 108, 212);
     padding: 0 20px 20px 20px;
     margin: 0 -20px;
 }
@@ -265,13 +265,19 @@ footer p{
 
 /* pad and laptop */
 @media screen and (min-width: 960px){
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
     .site-nav ul{
         display: flex;
-        gap: 40px;
-        padding: 10px 0;
-        margin-right: 400px;
-        margin-left: 80px;
-        padding-bottom: 30px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+   }
+
+   nav label {
+       display: none;
    }
 
    .site-nav h1{
@@ -323,13 +329,6 @@ footer p{
         margin-left: 60px;
         font-size: 2.5em;
         border-bottom: 4px solid yellow;
-    }
-
-    .site-nav ul{
-        gap: 80px;
-        margin-right: 400px;
-        margin-left: 90px;
-        padding-bottom: 30px;
     }
     
     .support-text h2, .volunteer-text h2, .intern-text h2{
