@@ -406,13 +406,12 @@ footer p{
     }
 
     .welcome-text2{
-        display: block;
-        grid-column: 2/6;
-        grid-row: 3;
+        display: flex;
+        justify-content: space-around;
         margin: 20px 0;
         line-height: 30px;
         text-align: left;
-        padding-top: 20px;
+        gap: 30px;
     }
 
     .portfolio-grid a:nth-child(1){
@@ -488,10 +487,6 @@ footer p{
         grid-row: 2;
         padding-top: 30px;
         
-    }
-
-    .welcome-text2{
-        grid-column: 2/6;
     }
 
     .images-grid a:nth-child(1){
