@@ -159,12 +159,12 @@ i{
 .portfolio-grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: 10px -20px;
+    margin: 0 auto;
     text-align: center;
     padding: 20px 20px 20px 20px;
     gap: 20px;
     background: linear-gradient(to left, rgb(52, 108, 212), teal);
-    width: 100%;
+    width: 80%;
 }
 
 .portfolio-grid a:nth-child(1){
@@ -193,10 +193,11 @@ i{
 }
 
 .portfolio-grid img{
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 40px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .portfolio-grid h4{
