@@ -133,7 +133,7 @@ i{
 #cosmology{
     background: linear-gradient(to bottom, rgb(52, 108, 212), rgb(179, 129, 104));
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .cosmology-text h2{
@@ -157,13 +157,13 @@ i{
 .cosmology-img{
     grid-column: 1/13;
     grid-row: 1;
-    margin: 0px -20px;
+    margin: 0px auto;
 }
 
 #evolution{
     background: linear-gradient(to bottom, rgb(179, 129, 104), rgb(91, 173, 206));
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .evolution-text h2{
@@ -187,14 +187,14 @@ i{
 .evolution-img{
     grid-column: 1/13;
     grid-row: 1;
-    margin: 0px -20px;
+    margin: 0px auto;
 }
 
 
 #bio{
     background: linear-gradient(to bottom, rgb(91, 173, 206), rgb(155, 158, 159));
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .bio-text h2{
@@ -218,13 +218,13 @@ i{
 .bio-img{
     grid-column: 1/13;
     grid-row: 1;
-    margin: 0px -20px;
+    margin: 0px auto;
 }
 
 #robotics{
     background: linear-gradient(to bottom, rgb(155, 158, 159), rgb(85, 160, 101));
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .robotics-text h2{
@@ -248,13 +248,13 @@ i{
 .robotics-img{
     grid-column: 1/13;
     grid-row: 1;
-    margin: 0px -20px;
+    margin: 0px auto;
 }
 
 #ecology{
     background: linear-gradient(to bottom, rgb(85, 160, 101), teal);
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .ecology-text h2{
@@ -278,13 +278,13 @@ i{
 .ecology-img{
     grid-column: 1/13;
     grid-row: 1;
-    margin: 0px -20px;
+    margin: 0px auto;
 }
 
 #contact{
     padding: 30px 20px;
     background: teal;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 #contact h3, p{
@@ -307,7 +307,7 @@ i{
 footer{
     padding: 30px 20px;
     background: white;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 footer p{

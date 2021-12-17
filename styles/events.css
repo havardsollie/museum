@@ -133,7 +133,7 @@ i{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .einstein-text h2{
@@ -162,7 +162,7 @@ i{
 #air{
     background: white;
     padding:100px 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 #night{
@@ -170,7 +170,7 @@ i{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .night-text h2{
@@ -195,7 +195,7 @@ i{
 #air2{
     background: white;
     padding:100px 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 #energetica{
@@ -203,7 +203,7 @@ i{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 20px 20px 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 .energetica-text h2{
@@ -228,7 +228,7 @@ i{
 #contact{
     padding: 30px 20px;
     background: teal;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 #contact h3, p{
@@ -251,7 +251,7 @@ i{
 footer{
     padding: 30px 20px;
     background: white;
-    margin: 0 -20px;
+    margin: 0 auto;
 }
 
 footer p{
