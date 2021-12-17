@@ -115,6 +115,15 @@ i{
     border-bottom: 3px solid teal;
 }
 
+.top-image {
+    width: 100%;
+}
+
+.top-image img {
+    width: 100%;
+    height: auto;
+}
+
 #welcome{
     padding: 0 20px 20px 20px;
 }
@@ -372,8 +381,18 @@ footer p{
         border-bottom: 3px solid yellow;
     }
 
+    .top-image {
+        margin-top: 10px;
+    }
+
     #welcome{
         padding: 20px 30px 30px 30px;
+    }
+
+    .welcome-text {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 
     .welcome-text h2{
@@ -381,6 +400,7 @@ footer p{
         border-bottom: 2px solid yellow;
         margin-right: 80px;
         padding-left: 40px;
+        text-align: center;
     }
 
     .welcome-text p{
@@ -454,8 +474,9 @@ footer p{
     
     .info-text{
         line-height: 30px;
-        margin: 60px -20px;
         padding: 50px;
+        max-width: 500px;
+        margin: 60px auto;
     }
     
 }
